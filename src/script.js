@@ -40,7 +40,7 @@ window.addEventListener('resize', () =>
   renderer.setSize(sizes.width, sizes.height)
   renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 })
-
+// Full screen and exit full screen
 window.addEventListener('dblclick',() => 
 {
     if(!document.fullscreenElement){
