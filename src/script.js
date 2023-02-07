@@ -43,7 +43,9 @@ window.addEventListener('resize', () =>
 // Full screen and exit full screen
 window.addEventListener('dblclick',() => 
 {
-    if(!document.fullscreenElement){
+    const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement
+
+    if(!fullscreenElement){
         canvas.requestFullscreen()
     }else{
         document.exitFullscreen()
